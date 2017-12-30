@@ -22,7 +22,7 @@ public class ConsoleUtility
 		{
 			System.out.println(i+". "+option[i]);
 		}
-		int option1=readInt("Choose your optiion");
+		int option1=readInt("Choose your option");
 		if(option1<0||option1>=option.length)
 		{
 			System.out.println("Invalid input");
