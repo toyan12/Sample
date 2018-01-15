@@ -3,11 +3,10 @@ import java.net.*;
  
 public class EchoClient 
 {
-    public static final String hostName = "58.153.15.14";
-    public static final int portNumber = 501;
+    public static final String hostName = "192.168.0.100";
+    public static final int portNumber = 1030;
     public static void main(String[] args) throws IOException 
     {
- 
         try (
             Socket echoSocket = new Socket(hostName, portNumber);
             PrintWriter out =new PrintWriter(echoSocket.getOutputStream(), true);
