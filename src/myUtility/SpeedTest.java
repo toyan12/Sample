@@ -2,9 +2,11 @@ package myUtility;
 
 public class SpeedTest 
 {
-	public long start=0;
-	long end=0;
-	public SpeedTest(){}
+	private long start;
+	private long end;
+	public SpeedTest(){
+		reset();
+	}
 	public void start()
 	{
 		start=System.nanoTime();
@@ -13,8 +15,13 @@ public class SpeedTest
 	{
 		end=System.nanoTime();
 	}
-	public void showTime()
+	public void reset()
 	{
-		System.out.println("The function run for "+(end-start)+" nano second.");
+		start=0;
+		end=0;
+	}
+	public long showTime()
+	{
+		return end-start;
 	}
 }
