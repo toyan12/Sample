@@ -2,7 +2,7 @@ package myUtility;
 
 import java.util.Date;
 
-public class Test 
+public class LoopSample 
 {
 	
 	public static void main(String[] args)
