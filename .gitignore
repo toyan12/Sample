@@ -1,2 +1,4 @@
 
 *.class
+bin/.DS_Store
+bin/myUtility/.DS_Store
